@@ -176,7 +176,7 @@ Now we can replace such assertions:
 ```yaml
 space: S000222  # Product topology on $\omega^{2^\mathfrak{c}}$
 property: P000026  # Separable
-value: true  # actually this is deduced automatically today
+value: false  # actually this is deduced automatically today
 ```
 
 ```yaml
@@ -190,7 +190,7 @@ with more expressive ones:
 ```yaml
 space: S000222  # Product topology on $\omega^{2^\mathfrak{c}}$
 property: P000xyz  # Density
-value: beth 1  # Question: should we support "leq beth 1"?
+value: beth 1
 ```
 
 ---
