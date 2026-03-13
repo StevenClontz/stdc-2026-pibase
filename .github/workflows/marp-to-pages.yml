@@ -34,22 +34,6 @@ jobs:
         env:
           MARP_USER: root:root
 
-      - name: Marp Build pptx (docs folder)
-        if: steps.docs-folder-exists.outputs.has_docs == '0'
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: -I docs/ -o build/ --pptx
-        env:
-          MARP_USER: root:root
-
-      - name: Marp Build pdf (docs folder)
-        if: steps.docs-folder-exists.outputs.has_docs == '0'
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: -I docs/ -o build/ --pdf
-        env:
-          MARP_USER: root:root
-
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
         uses: rossjrw/pr-preview-action@v1
