@@ -38,7 +38,7 @@ jobs:
         if: steps.docs-folder-exists.outputs.has_docs == '0'
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: -I docs/ -o build/docs/ --pptx
+          args: -I docs/ -o build/ --pptx
         env:
           MARP_USER: root:root
 
@@ -46,7 +46,7 @@ jobs:
         if: steps.docs-folder-exists.outputs.has_docs == '0'
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: -I docs/ -o build/docs/ --pdf
+          args: -I docs/ -o build/ --pdf
         env:
           MARP_USER: root:root
 

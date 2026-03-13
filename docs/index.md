@@ -144,8 +144,6 @@ name: Fixed point property
 
 ---
 
-# Properties with cardinal values, cont.
-
 ... and hydrate others:
 
 ```yaml
@@ -254,4 +252,32 @@ then:
   P000zyx: leq beth 1  # Cardinality
 ```
 
-(Of course, $\mathbb R$ is a sequential US space which has density $\beth_0$ but cardinality $\beth_1$.)
+Of course, $\mathbb R$ is a sequential US space which has density $\beth_0$ but cardinality $\beth_1$.
+
+---
+
+# Implementation as software
+
+So this means we just need a to program a few small things:
+
+* A `Cardinality` class that understands $n$, $\aleph_n$, $\beth_n$, and "custom cardinals" e.g. $\mathfrak b$.
+   * Also, `Cardinality.leq:boolean` so `new Cardinality("aleph 3") <= new Cardinality("beth 4")` returns `true` and `new Cardinality("char_b") < new Cardinality("aleph 1")` returns... `false`? `"undecidable"`?
+* A string parser that reads `leq beth 3` and abstracts it to a `Cardinality` that represents $\leq \beth_3$.
+* A deduction engine that understands the `kappa` placeholder in our theorems.
+* That... that's all?!
+
+---
+
+# Ultimately...
+
+With this infrastructure, we could not only have more expressive options to describe results in general and set-theoretic topology, but perhaps even support results beyond those which can be proven in ZFC?
+
+As an easy example: $\mathbb R$ does not currently appear in a search for `Cardinality $\leq \aleph_1$ + Separable`. But it could if we had an `[x] Assume CH` option that tells `Cardinality` to assume that `new Cardinality("aleph 1") == new Cardinality("beth 1")`.
+
+---
+
+# Questions? Answers? Volunteers?
+
+## References
+
+- 
