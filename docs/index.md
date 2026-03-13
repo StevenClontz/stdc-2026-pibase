@@ -88,8 +88,8 @@ We will discuss the current plan to incorporate results from set theory into the
 
 * LuCaNT is a conference series on mathematical databases, computation, and number theory.
     * ![h:100](./assets/sam-eagle.png) "But mostly number theory and the LMFDB"
-* But in [C., 2026] I wrote for LuCaNT about the "$\pi$-Base model" itself: Objects (from any category), Properties, and Theorems.
-* And in that paper, I pointed out another problem with making the $\pi$-Base "count", in a *different sense*...
+* But I did contribute to LuCaNT's special issue of *Contemporary Mathematics* about the "$\pi$-Base model" itself: Objects (from any category), Properties, and Theorems.
+* And in that paper, I pointed out another problem with making the $\pi$-Base "count", *in a different sense*...
 
 ---
 
@@ -280,4 +280,6 @@ As an easy example: $\mathbb R$ does not currently appear in a search for `Cardi
 
 ## References
 
-- 
+- C.; Williams, Marshall. "Separation Axioms Among US." [Zbl 08109626](https://zbmath.org/8109626). Topology Appl. 375, Article ID 109467, 11 p. (2025).
+- C. "Database-Driven Mathematical Inquiry and the $\pi$-Base Model for Small Semantic Databases." LuCaNT: Databases, Algorithms, and Computational Number Theory. Contemporary Mathematics. American Mathematical Society. (2026?).
+- C. "Non-Hausdorff $T_1$ Properties." Colloquium Mathematicum. (2026?).
