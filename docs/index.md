@@ -1,6 +1,7 @@
 ---
 marp: true
 math: mathjax
+backgroundImage: linear-gradient(rgba( 230 256 256 / 70%),rgba(240 256 256 / 70%)), url('./assets/hero-background.svg')
 ---
 
 <style>
