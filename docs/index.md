@@ -22,6 +22,17 @@ section::after {
 
 ---
 
+# Thanks to the session organizers!
+![](./assets/meme.png)
+
+---
+
+# No actually, thank YOU!
+
+It's great to have such great research colleagues.
+
+---
+
 <!-- paginate: true -->
 
 # Topology, Set Theory, and the $\pi$-Base
